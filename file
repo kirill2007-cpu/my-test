@@ -14,11 +14,6 @@ const App = () => {
           path="/"
           component={HomePage}
           exact />
-
-        <Route
-          path="/cart"
-          component={CartPage}
-          />
       </Switch>
     </main>
   );
