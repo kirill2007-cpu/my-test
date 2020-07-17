@@ -14,11 +14,34 @@ const App = () => {
           path="/"
           component={HomePage}
           exact />
+      </Switch>
+    </main>
+  );
+};
 
+const App = () => {
+  return (
+    <main role="main" className="container">
+      <ShopHeader numItems={5} total={210}/>
+      <Switch>
         <Route
-          path="/cart"
-          component={CartPage}
-          />
+          path="/"
+          component={HomePage}
+          exact />
+      </Switch>
+    </main>
+  );
+};
+
+const App = () => {
+  return (
+    <main role="main" className="container">
+      <ShopHeader numItems={5} total={210}/>
+      <Switch>
+        <Route
+          path="/"
+          component={HomePage}
+          exact />
       </Switch>
     </main>
   );
